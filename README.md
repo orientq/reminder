@@ -11,8 +11,6 @@ I assume the final project may include the following. This is apparently too muc
 - [ ] HTML
 - [ ] CSS
 - [ ] JavaScript
-- [ ] Git
-- [ ] 
 - [ ] React
 - [ ] backend (NodeJS / PHP)
 - [ ] GraphQL
@@ -26,5 +24,5 @@ I assume the final project may include the following. This is apparently too muc
 - [ ] Functional Programming
 - [ ] ...
 
-
+If possible, in the future I might take a note on how to use these in this paticular project.
 
