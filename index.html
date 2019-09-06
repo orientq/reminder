@@ -9,10 +9,11 @@
 <body>
   <h1>Reminder</h1>
   <form action="/">
-    <input type="text">
-    <button type="submit" onclick="onSubmit(event)">Submit</button>
+    <input type="text" id="content">
+    <button type="submit" onclick="addItem(event)">Add</button>
   </form>
-  <ul class="todo-list">
+  <div id="error-message" style="color: red;"></div>
+  <ul id="todo-list" class="todo-list">
     <!-- <li class="todo-item">item1</li> -->
   </ul>
   
