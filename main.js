@@ -12,13 +12,19 @@ function addItem(e) {
     errorMessageDiv.innerText  = "";
   }
 
-  addToList(value)
+  addToList(value);
+  input.value = "";
 }
 
 
 function addToList(content) {
   let listUl = document.getElementById('todo-list');
   let newItem = document.createElement('li');
-  newItem.innerHTML = content;
+  let contentNode = document.createTextNode(content);
+  let deleteButton = document.createElement('button');
+  deleteButton.innerText = '❌';
+  
+  newItem.appendChild(contentNode);
+  newItem.appendChild(deleteButton);
   listUl.appendChild(newItem);
 }
