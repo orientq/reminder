@@ -8,9 +8,9 @@ There will be no framework used in the beginning. As the development continue, f
 
 I assume the final project may include the following. This is apparently too much for a simple todo app. I'll have to make the project way more complex than a demo.
 
-- [ ] HTML
+- [x] HTML
 - [ ] CSS
-- [ ] JavaScript
+- [x] JavaScript
 - [ ] React
 - [ ] backend (NodeJS / PHP)
 - [ ] GraphQL
