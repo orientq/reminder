@@ -21,20 +21,15 @@ function addToList(content) {
   const id = Math.random().toString(32).slice(2).toUpperCase();
   let listUl = document.getElementById('todo-list');
   let newItem = document.createElement('li');
-  let contentNode = document.createTextNode(content);
-  let deleteButton = document.createElement('button');
-  deleteButton.innerText = '❌';
-  deleteButton['data-id'] = id;
-  deleteButton.addEventListener('click', handleDeleteClick)
-  
+  newItem.innerHTML = `
+    <span>${content}</span>
+    <button onclick="deleteItem('${id}')"> × </button>
+  `
   newItem.id = id;
-  newItem.appendChild(contentNode);
-  newItem.appendChild(deleteButton);
   listUl.appendChild(newItem);
 }
 
-function handleDeleteClick(e) {
-  let id = e.target['data-id']
+function deleteItem(id) {
   let item = document.getElementById(id);
   item.parentElement.removeChild(item);
 }
